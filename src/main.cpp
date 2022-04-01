@@ -7,8 +7,8 @@
 
 const char MB_WINDOW_TITLE[] = "Mandelbrot"; 
 
-const int MB_WINDOW_WIDTH  = 640;
-const int MB_WINDOW_HEIGHT = 480;
+const int MB_WINDOW_WIDTH  = 2 * 640;
+const int MB_WINDOW_HEIGHT = 2 * 480;
 
 static inline int terminate(const char *msg) 
 {
@@ -19,7 +19,7 @@ static inline int terminate(const char *msg)
 int main(int argc, char *argv[])
 {
         int opt = 0;
-        int loop = 0;
+        int loop = 1;
 
         SDL_Surface* (*Blit)(SDL_Surface *const, float, int, float, Point) = &BlitMandelbrotAVX;
         
@@ -117,7 +117,7 @@ int main(int argc, char *argv[])
                 }
 
                 for (int i = 0; i < loop; i++)
-                        Blit(surface, 100, 128, scale, origin);
+                        Blit(surface, 1000, 256, scale, origin);
                         
                 SDL_UpdateWindowSurface(window);
 
