@@ -5,7 +5,7 @@ The following features/dependencies are used:
 - [SIMD Intel instructions]
 - [SDL2] library 
 
-![Set](img/mandelbrot.png "Mandelbrot set")
+![Set](img/mandelbrot.png =800x "Mandelbrot set")
 
 [Mandelbrot]: https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set
 [SDL2]:       https://www.libsdl.org/download-2.0.php
